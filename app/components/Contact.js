@@ -14,7 +14,7 @@ export function Contact() {
       <div class="max-w-7xl mx-auto">
         <div class="mr-20 mx-auto text-center flex flex-col justify-center align-center text-right">
           <h2 class="text-xl font-medium text-gray-900 dark:text-white sm:text-4xl">
-            Let's get connected !
+            Let&apos;s get connected !
           </h2>
           <p className="m-2">
             Need an Experienced Frontend Specialist Developer to help out?

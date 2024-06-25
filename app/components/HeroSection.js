@@ -20,7 +20,7 @@ export function HeroSection() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-left mx-auto "
       >
-        Hi, I'm Pallavi Bobde <br />
+        Hi, I&apos;m Pallavi Bobde <br />
         
         
         <Highlight className="text-black dark:text-white px-5">
@@ -28,7 +28,7 @@ export function HeroSection() {
         </Highlight>
         <p className="text-[20px] font-normal my-5">
           Energetic developer, specializing in React, React Native and Next js applications,
-          with over 2 years of professional experience in creating and optimizing web applications. Let's build something amazing together.<br/>
+          with over 2 years of professional experience in creating and optimizing web applications. Let&apos;s build something amazing together.<br/>
         </p>
         <div className="my-10 flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
           <a

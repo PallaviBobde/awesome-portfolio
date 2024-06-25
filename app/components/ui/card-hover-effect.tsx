@@ -56,6 +56,7 @@ export const HoverEffect = ({
             <TagsSection items={item.tags} />
             <Image
               src={item.imageLink}
+              alt={item.title}
               width={500}
               height={200}
               className="rounded-xl"
