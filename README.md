@@ -1,8 +1,8 @@
-# 🌟 Portfolio of Pallavi Bobde 💼
+# 🌟 Awesome Portfolio Pallavi Bobde 💼
 
 ![Portfolio Logo](path/to/logo.png)
 
-Welcome to the **Portfolio of Pallavi Bobde**! Explore my projects, skills, and professional journey.
+Welcome to my **Portfolio**! Explore my projects, skills, and professional journey.
 
 ## 🚀 Description
 
