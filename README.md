@@ -1,6 +1,6 @@
 # 🌟 Awesome Portfolio Pallavi Bobde 💼
 
-![Portfolio Logo](path/to/logo.png)
+![Portfolio Logo](https://github.com/PallaviBobde/photo-resources/blob/main/Screenshot%202024-06-25%20at%207.52.15%E2%80%AFPM.png?raw=true)
 
 Welcome to my **Portfolio**! Explore my projects, skills, and professional journey.
 
