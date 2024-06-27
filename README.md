@@ -1,12 +1,12 @@
-# 🌟 Portfolio of Pallavi Bobde 💼
+# 🌟 Awesome Portfolio Pallavi Bobde 💼
 
-![Portfolio Logo](path/to/logo.png)
+![Portfolio Logo](https://github.com/PallaviBobde/photo-resources/blob/main/Screenshot%202024-06-25%20at%207.52.15%E2%80%AFPM.png?raw=true)
 
-Welcome to the **Portfolio of Pallavi Bobde**! Explore my projects, skills, and professional journey.
+Welcome to my **Portfolio**! Explore my projects, skills, and professional journey.
 
 ## 🚀 Description
 
-This portfolio showcases the projects and skills of Pallavi Bobde, a passionate Front-End Developer with over 2 years of experience specializing in React-based applications. Discover my work, get insights into my experience, and feel free to get in touch.
+This portfolio showcases my projects and skills, I am a passionate Front-End Developer with over 2+ years of experience specializing in React-based applications. Discover my work, get insights into my experience, and let's get in touch.
 
 ## ✨ Features
 
@@ -16,14 +16,15 @@ This portfolio showcases the projects and skills of Pallavi Bobde, a passionate 
 
 ## 🛠️ Technologies Used
 
-- **HTML5**: For semantic and accessible markup.
+- **Nextjs**: For development of the project
+- **JSX**: For semantic and accessible markup.
 - **CSS3**: Styling with Flexbox, Grid, and animations.
 - **JavaScript (ES6+)**: For dynamic content and interactivity.
 
 ## 📞 URLs
 
 - **Repo**: [https://github.com/PallaviBobde/portfolio](https://github.com/PallaviBobde/myportfolio)
-- **View**: [https://pallavibobde.github.io/portfolio/](https://pallavibobde.github.io/myportfolio/)
+- **View**: [https://pallavibobde.github.io/portfolio/](https://awesome-portfolio-pallavi.vercel.app/)
 
 ## 📞 Let's get in touch
 
