@@ -30,7 +30,8 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group  block p-2 h-full w-full"
+          target="_blank"
+          className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -53,15 +54,17 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <CardTitle>{item.title}</CardTitle>
-            <TagsSection items={item.tags} />
             <Image
               src={item.imageLink}
               alt={item.title}
               width={500}
               height={200}
-              className="rounded-xl"
+              className="rounded-xl border border-gray-600"
             />
-            <CardDescription>{item.description}</CardDescription>
+            <TagsSection items={item.tags} />
+            <CardDescription className="paraProjects">
+              {item.description}
+            </CardDescription>
             <button className="rounded-xl bg-gradient-to-t from-[#330867] to-[#0072ff] dark:from-[#330867] dark:to-[#0072ff]  dark:border-[#0072ff] border-[#0072ff] text-white text-[16px] py-3 px-5 mt-5">
               View Project
             </button>
@@ -115,8 +118,8 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "text-[20px] tracking-wide leading-relaxed mt-5",
-        className
+        "text-[14px] tracking-wide leading-relaxed mt-5",
+        className,
       )}
     >
       {children}

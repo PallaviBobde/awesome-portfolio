@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client"
 import { HeroSection } from "./components/HeroSection";
 import { ResumeSection } from "./components/ResumeSection";
 import { Projects } from "./components/Projects";

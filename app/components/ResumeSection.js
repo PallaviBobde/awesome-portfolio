@@ -2,31 +2,35 @@
 import React from "react";
 import { ContainerScroll } from "./ui/container-scroll-animation";
 import { PdfViewer } from "../components/PdfViewer";
+import Image from "next/image";
 
 export function ResumeSection() {
   return (
     <div className="flex flex-col overflow-hidden" id="resume">
       <ContainerScroll
         titleComponent={
-          <>
-            <h1 className="text-4xl font-semibold text-black dark:text-white flex flex-col w-full">
+            <h1 className="text-4xl font-semibold text-black dark:text-white flex flex-col w-full mr-10 resume-text">
               Have a look at my <br />
-              <span className="text-4xl md:text-[4rem] font-bold mt-1 text-[#0072ff] my-5 w-full leading-none">
+              <span className="text-4xl md:text-[4rem] font-bold mt-1 text-[#0072ff] my-5 w-full leading-none resume-text">
                 Awesome Resume
               </span>
               <a
                 href="./Pallavi-Bobde-Resume.pdf"
                 download="Pallavi-Bobde-Resume.pdf"
                 target="_blank"
-                className="rounded-xl border-2  border-white text-white text-[16px] py-3 px-5 my-3 mr-10 text-center"
+                className="rounded-xl border-2  border-white text-white text-[16px] py-1 px-5 my-3 mr-10 text-center w-[200px] "
               >
                 Download Resume
               </a>
             </h1>
-          </>
         }
       >
-        <PdfViewer />
+        <Image 
+        src='/Pallavi-Bobde-Resume.jpg'
+        alt="Pallavi Bobde Resume"
+        width={500}
+        height={400}
+        />
       </ContainerScroll>
     </div>
   );
