@@ -90,7 +90,7 @@ export const InfiniteMovingCards = ({
             className=" relative rounded-2xl flex-shrink-0 border-slate-700 px-2 py-2  "
             key={item.name}
           >
-            <span className="flex flex-col gap-1 text-white text-[20px] gradient-text">
+            <span className="flex flex-col gap-1 text-white text-[20px] skill-text">
               {item.name}
             </span>
           </li>

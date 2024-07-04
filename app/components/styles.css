@@ -4,6 +4,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+.skill-text{
+  background: linear-gradient(to right, #0072ff, #925ad6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .altpara {
   display: none;
   }
