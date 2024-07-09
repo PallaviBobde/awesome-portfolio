@@ -6,14 +6,14 @@ export function Footer() {
   return (
     <div class="">
       {/* Copyright - pallavibobde1@gmail.com */}
-      {/* sticky icons */}
       <div className="fixed bottom-0 right-0 h-[20]   z-30 px-1 py-10 ">
         <ContactButton
-          link={"https://github.com/PallaviBobde"}
+          
+          link={"https://www.linkedin.com/in/pallavi-bobde-35ba721b2"}
           Icon={FaLinkedinIn}
         />
         <ContactButton
-          link={"https://www.linkedin.com/in/pallavi-bobde-35ba721b2"}
+          link={"https://github.com/PallaviBobde"}
           Icon={FaGithub}
         />
         <ContactButton

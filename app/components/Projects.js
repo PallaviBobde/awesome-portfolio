@@ -41,7 +41,7 @@ export const projects = [
       "The YouTube Dada App is built to mimic the popular video streaming platform YouTube. It leverages Rapid API to fetch YouTube data and provides a sleek and responsive user interface. Explore the features, technologies used, and dive into the codebase.",
     tags:['React','React Router DOM','Axios','React Player','Material UI (MUI)','Emotion','React Scripts'],
     imageLink:'https://raw.githubusercontent.com/PallaviBobde/photo-resources/main/Screenshot%202024-06-25%20at%207.52.45%E2%80%AFPM.png',
-    link: "",
+    link: "https://youtube-dada.vercel.app/",
   },
   {
     title: "Awesome Portfolio",
@@ -49,7 +49,7 @@ export const projects = [
       "This portfolio showcases my projects and skills, I am a passionate Front-End Developer with over 2+ years of experience specializing in React-based applications. Discover my work, get insights into my experience, and let's get in touch.",
     tags:['Next js','React','React Hooks','Framer','Tailwind Css'],
     imageLink:'https://raw.githubusercontent.com/PallaviBobde/photo-resources/main/Screenshot%202024-06-25%20at%207.52.15%E2%80%AFPM.png',
-    link: "https://veberszone.com/",
+    link: "https://pallavibobde.com/",
   },
   {
     title: "Veberszone",
@@ -59,14 +59,14 @@ export const projects = [
     imageLink:'https://raw.githubusercontent.com/PallaviBobde/image-reosources/main/Screenshot%202024-06-25%20at%208.07.56%E2%80%AFPM.png',
     link: "https://veberszone.com/",
   },
-  {
-    title: "Image Manipulator",
-    description:
-      "Image Manipulator is a versatile web application designed for users to upload, edit, and apply various effects to images. Whether you're enhancing photos, adding filters, or resizing images, this tool provides a simple yet powerful interface for image manipulation.",
-    tags:['Javascript','Html','Css','Caman js'],
-    imageLink:'https://raw.githubusercontent.com/PallaviBobde/photo-resources/main/Screenshot%202024-06-25%20at%207.47.38%E2%80%AFPM.png',
-    link: "https://pallavibobde.github.io/img_manipulation/",
-  },
+  // {
+  //   title: "Image Manipulator",
+  //   description:
+  //     "Image Manipulator is a versatile web application designed for users to upload, edit, and apply various effects to images. Whether you're enhancing photos, adding filters, or resizing images, this tool provides a simple yet powerful interface for image manipulation.",
+  //   tags:['Javascript','Html','Css','Caman js'],
+  //   imageLink:'https://raw.githubusercontent.com/PallaviBobde/photo-resources/main/Screenshot%202024-06-25%20at%207.47.38%E2%80%AFPM.png',
+  //   link: "https://pallavibobde.github.io/img_manipulation/",
+  // },
   {
     title: "Google Keep Clone",
     description:
