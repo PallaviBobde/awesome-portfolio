@@ -17,7 +17,10 @@ export function HeaderSection() {
   return (
     <nav className=" p-4 absolute top-0 right-0 left-0 navbar">
       {isOpen ? (
-        <div className="container mx-auto flex justify-between h-[100vh] bg-[#111] bg-gray-900">
+
+
+        
+        <div className="container mx-auto flex justify-between h-[100vh] bg-gray-900">
           <div className={`w-full lg:flex lg:w-auto block`}>
             <ul className="w-full h-full lg:flex lg:space-x-4 mt-4 lg:mt-0 text-white  flex flex-col items-center justify-center">
               <li>
@@ -97,9 +100,12 @@ export function HeaderSection() {
             </button>
           </div>
         </div>
+
+
+
       ) : (
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-white text-lg font-bold gradient-text">Pallavi</div>
+          <div className="text-white text-lg font-bold gradient-text menu-item">Pallavi</div>
           <div className="block lg:hidden">
             <button
               onClick={toggleMenu}
@@ -126,7 +132,7 @@ export function HeaderSection() {
               <li>
                 <a
                   href="/"
-                  className="block px-2 py-1 hover:bg-gray-700 rounded"
+                  className="block mx-2 py-1 hover:border-b menu-item hover:text-[#0072ff] hover:border-[#0072ff]"
                 >
                   Home
                 </a>
@@ -134,7 +140,7 @@ export function HeaderSection() {
               <li>
                 <a
                   href="#projects"
-                  className="block px-2 py-1 hover:bg-gray-700 rounded"
+                  className="block mx-2 py-1 hover:border-b menu-item  hover:text-[#0072ff] hover:border-[#0072ff]"
                 >
                   Projects
                 </a>
@@ -143,7 +149,7 @@ export function HeaderSection() {
                 <a
                   href="https://github.com/PallaviBobde"
                   target="_blank"
-                  className="block px-2 py-1 hover:bg-gray-700 rounded"
+                  className="block mx-2 py-1 hover:border-b  hover:text-[#0072ff] hover:border-[#0072ff]"
                 >
                   Github 
                 </a>
@@ -151,7 +157,7 @@ export function HeaderSection() {
               <li>
                 <a
                   href="#resume"
-                  className="block px-2 py-1 hover:bg-gray-700 rounded"
+                  className="block mx-2 py-1 hover:border-b  menu-item  hover:text-[#0072ff] hover:border-[#0072ff]"
                 >
                   Resume
                 </a>
@@ -160,7 +166,7 @@ export function HeaderSection() {
               <li>
                 <a
                   href="#contact"
-                  className="block px-2 py-1 hover:bg-gray-700 rounded"
+                  className="block mx-2 py-1 hover:border-b menu-item  hover:text-[#0072ff] hover:border-[#0072ff]"
                 >
                   Contact me
                 </a>

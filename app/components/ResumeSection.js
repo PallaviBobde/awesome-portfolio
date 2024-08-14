@@ -9,7 +9,7 @@ export function ResumeSection() {
     <div className="flex flex-col overflow-hidden" id="resume">
       <ContainerScroll
         titleComponent={
-            <h1 className="text-4xl font-semibold text-black dark:text-white flex flex-col w-full mr-10 resume-text">
+            <h1 className="text-4xl font-semibold text-white flex flex-col w-full mr-10 resume-text">
               Have a look at my <br />
               <span className="text-4xl md:text-[4rem] font-bold mt-1 text-[#0072ff] my-5 w-full leading-none resume-text">
                 Awesome Resume

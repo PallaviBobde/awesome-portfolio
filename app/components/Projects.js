@@ -18,7 +18,7 @@ export function Projects() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white  leading-relaxed lg:leading-snug text-left mx-auto "
+        className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white  leading-relaxed lg:leading-snug text-left mx-auto "
       >
         Explore my Projects
       </motion.h1>
@@ -59,14 +59,6 @@ export const projects = [
     imageLink:'https://raw.githubusercontent.com/PallaviBobde/image-reosources/main/Screenshot%202024-06-25%20at%208.07.56%E2%80%AFPM.png',
     link: "https://veberszone.com/",
   },
-  // {
-  //   title: "Image Manipulator",
-  //   description:
-  //     "Image Manipulator is a versatile web application designed for users to upload, edit, and apply various effects to images. Whether you're enhancing photos, adding filters, or resizing images, this tool provides a simple yet powerful interface for image manipulation.",
-  //   tags:['Javascript','Html','Css','Caman js'],
-  //   imageLink:'https://raw.githubusercontent.com/PallaviBobde/photo-resources/main/Screenshot%202024-06-25%20at%207.47.38%E2%80%AFPM.png',
-  //   link: "https://pallavibobde.github.io/img_manipulation/",
-  // },
   {
     title: "Google Keep Clone",
     description:
@@ -83,12 +75,12 @@ export const projects = [
     imageLink:'https://raw.githubusercontent.com/PallaviBobde/photo-resources/main/Screenshot%202024-06-25%20at%207.52.02%E2%80%AFPM.png',
     link: "https://pallavibobde.github.io/crypto-app/",
   },
-  {
-    title: "Weather App",
-    description:
-      "Check weather using this website. It uses openweathermap api.",
-    tags:['Javascript','Html','Css'],
-    imageLink:'https://pallavibobde.github.io/myportfolio/Screenshot%20(69).png',
-    link: "https://pallavibobde.github.io/weatherapp/",
-  },
+  // {
+  //   title: "Weather App",
+  //   description:
+  //     "Check weather using this website. It uses openweathermap api.",
+  //   tags:['Javascript','Html','Css'],
+  //   imageLink:'https://pallavibobde.github.io/myportfolio/Screenshot%20(69).png',
+  //   link: "https://pallavibobde.github.io/weatherapp/",
+  // },
 ];

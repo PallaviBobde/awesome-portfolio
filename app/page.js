@@ -6,17 +6,28 @@ import { HeaderSection } from "./components/HeaderSection";
 import { Contact } from "./components/Contact";
 import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
+import { Testimonials } from "./components/ui/testimonials";
+// import experienceTimeline from "./components/ui/experienceTimeline";
+import  TestFooter  from "./components/TestFooter";
+import HeroSectionss from './components/HeroSectionss';
+import TimeLine from './components/Timeline'
+
 
 export default function Home() {
   return (
     <>
     <HeaderSection/>
-    <HeroSection/>
+    <HeroSectionss/>
     <Skills/>
     <Projects/>
-    <ResumeSection/>
-    <Contact/>
+    <TimeLine/>
+    <Testimonials/>
+
     <Footer/>
+
+    <TestFooter/>
+    
+    
     </>
   );
 }
