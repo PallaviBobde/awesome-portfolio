@@ -1,14 +1,35 @@
-import React from 'react';
-import { IoIosMail } from 'react-icons/io';
-import { FaLinkedinIn, FaPhone, FaGithub } from 'react-icons/fa';
+import React from "react";
+import { IoIosMail } from "react-icons/io";
+import { FaLinkedinIn, FaPhone, FaGithub } from "react-icons/fa";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="bg-black text-white pb-20 pt-80 bg-gradient-to-b from-transparent to-[#0072ff60] ">
+    <footer id="footer" className="bg-black text-white pt-20 pb-5 bg-[#004aad60] text-sm">
       <div className="flex flex-wrap container mx-auto px-6 md:px-12">
-        {/* Contact Section */}
-        <div className="col col1 w-full md:w-1/3 mb-6 md:mb-0">
-          <h3 className="footer-heading text-xl font-semibold mb-4">Contact me Today!</h3>
+        
+       
+      <div className="col col1 w-full md:w-1/3 mb-6 md:mb-0 flex flex-col items-center">
+          <Logo />
+          {/* <p className=" mt-5">2024 © All Rights Reserved</p> */}
+        </div>
+        <div className="col col3 w-full md:w-1/3 flex flex-col items-center">
+          <a className=" mb-2" href="#projects">
+            Projects
+          </a>
+          <a className=" mb-2">Resume</a>
+          <a className=" mb-2" href="#contact">
+            Contact me
+          </a>
+          
+        </div>
+
+        
+
+        <div className="col col1 w-full md:w-1/3 mb-6 md:mb-0 flex flex-col items-center">
+          <h3 className="footer-heading font-semibold mb-4">
+            Contact me Today!
+          </h3>
           <div className="social flex space-x-4">
             <a
               href="mailto:pallavibobde1@gmail.com"
@@ -44,23 +65,12 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
         
-        {/* Navigation Links Section */}
-        <div className="col col2 w-full md:w-1/3 mb-6 md:mb-0 flex flex-col">
-          <a className="text-lg mb-2" href='#home'>Home</a>
-         <a  className="text-lg mb-2" href='#projects'>Projects</a>
-          <a className="text-lg mb-2"  href="https://github.com/PallaviBobde"
-                  target="_blank">Github</a>
-        </div>
-        
-        {/* Additional Links Section */}
-        <div className="col col3 w-full md:w-1/3 flex flex-col">
-          <a className="text-lg mb-2">Resume</a>
-          <a className="text-lg mb-2"  href="#contact">Contact me</a>
-          <p className="text-sm mt-5">2024 © All Rights Reserved</p>
-        </div>
       </div>
       <div className="backdrop"></div>
+      <p className=" text-center mt-20">2024 © All Rights Reserved</p>
+      {/* <div><p className=" mt-5">2024 © All Rights Reserved</p></div> */}
     </footer>
   );
 };

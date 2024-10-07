@@ -1,7 +1,5 @@
 import { cn } from "../../utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -10,27 +8,22 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
-    description: string;
-    link: string;
     imageLink: string;
     tags: string[];
+    overview:string;
+    challenges:any[];
+    solution:string;
+    result:string;
   }[];
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  
+
   return (
-    <div
-      className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
-        className
-      )}
-    >
+    <div className={cn("grid grid-cols-1 mx-2 sm:mx-20", className)}>
       {items.map((item, idx) => (
-        <Link
-          href={item?.link}
-          key={item?.link}
-          target="_blank"
+        <div
+          key={item?.title}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -52,24 +45,32 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <Image
-              src={item.imageLink}
-              alt={item.title}
-              width={500}
-              height={200}
-              className="rounded-xl border border-gray-600"
-            />
-            <TagsSection items={item.tags} />
-            <CardDescription className="paraProjects">
-              {item.description}
-            </CardDescription>
-            <button className="rounded-xl bg-gradient-to-t from-[#330867] to-[#0072ff] border-[#0072ff] text-white text-[16px] py-3 px-5 mt-5">
-              View Project
-            </button>
+          <Card className="">
+          <CardTitle>{item.title}</CardTitle>
+          <TagsSection items={item.tags} />
+            <div className="flex flex-col md:flex-row">
+              <img
+                src={item.imageLink}
+                alt={item.title}
+                className="rounded-xl border border-gray-600 w-full md:max-w-[30vw] h-fit"
+              />
+              <div className="md:ml-5 hidden sm:block text-gray-300">
+                <p className="font-semibold">Overview:</p>
+                <p className="mb-2">{item.overview}</p>
+                <p className="font-semibold">Challenges:</p>
+                <ul className="list-disc mb-2">
+                  {item?.challenges?.map((content)=>{
+                    return <li className="ml-5" key={content}>{content}</li>
+                  })}
+                </ul>
+                <p className="font-semibold">Solution:</p>
+                <p className="mb-2">{item?.solution}</p>
+                <p className="font-semibold">Results:</p>
+                <p className="mb-2">{item?.result}</p>
+              </div>
+            </div>
           </Card>
-        </Link>
+        </div>
       ))}
     </div>
   );
@@ -103,7 +104,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-[20px] font-bold tracking-wide my-4", className)}>
+    <h4 className={cn("text-[20px] font-bold tracking-wide", className)}>
       {children}
     </h4>
   );
@@ -119,7 +120,7 @@ export const CardDescription = ({
     <p
       className={cn(
         "text-[14px] tracking-wide leading-relaxed mt-5",
-        className,
+        className
       )}
     >
       {children}
@@ -127,24 +128,19 @@ export const CardDescription = ({
   );
 };
 
-export const TagsSection = ({
-  items,
-}: {
-  items:string[];
-}) => {
+export const TagsSection = ({ items }: { items: string[] }) => {
   return (
-    <div  className="flex flex-wrap my-5">
-    {
-      items.map((tag,index)=>{
+    <div className="flex flex-wrap">
+      {items.map((tag, index) => {
         return (
-          <p key={index} className="px-2 py-1 m-1 bg-gray-800 rounded-xl text-[14px]">
+          <p
+            key={index}
+            className="px-2 py-1 ml-[-5px] mb-5 bg-gray-800 rounded-xl text-[14px]"
+          >
             {tag}
           </p>
         );
-      })
-    }
-      
+      })}
     </div>
   );
 };
-

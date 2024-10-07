@@ -1,11 +1,10 @@
 "use client";
 import "./styles.css";
 import { useState } from "react";
-import { AiFillHome } from "react-icons/ai";
-import { RiContactsFill } from "react-icons/ri";
-import { GrProjects } from "react-icons/gr";
-import { FaGithub } from "react-icons/fa";
-import { FaFile } from "react-icons/fa6";
+import Logo from './Logo'
+import { FaClosedCaptioning, FaCross, FaCrosshairs, FaHamburger } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export function HeaderSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,97 +14,52 @@ export function HeaderSection() {
   };
 
   return (
-    <nav className=" p-4 absolute top-0 right-0 left-0 navbar">
+    <nav className=" bg-[#ffffff10] top-0 bottom-0 right-0 left-0 navbar sticky">
       {isOpen ? (
-
-
-        
-        <div className="container mx-auto flex justify-between h-[100vh] bg-gray-900">
-          <div className={`w-full lg:flex lg:w-auto block`}>
-            <ul className="w-full h-full lg:flex lg:space-x-4 mt-4 lg:mt-0 text-white  flex flex-col items-center justify-center">
+        <div className="container mx-auto flex justify-center items-center h-[100vh] bg-gray-900">
+            <ul className="w-full h-[40vh] mt-4 text-white  flex flex-col mx-20 justify-around">
               <li>
                 <a
                   href="/"
-                  className="block px-2 py-1 hover:bg-gray-700 w-[120px] flex items-center justify-center  py-5"
+                  className=" hover:bg-gray-700 w-[120px] py-2 my-5"
                   onClick={toggleMenu}
                 >
-                  <AiFillHome className="mr-5"/>
-                  Home
+                  <Logo/>
                 </a>
               </li>
-              
+
               <li>
                 <a
                   href="#projects"
-                  className="block px-2 py-1 hover:bg-gray-700 rounded flex items-center justify-center py-5"
+                  className=" hover:bg-gray-700 rounded py-2 my-5"
                   onClick={toggleMenu}
                 >
-                  <GrProjects className="mr-5"/>
                   Projects
                 </a>
               </li>
+
               <li>
                 <a
-                  href="https://github.com/PallaviBobde"
-                  target="_blank"
-                  className="block px-2 py-1 hover:bg-gray-700 rounded flex items-center justify-center py-5"
+                  href="mailto:pallavibobde1@gmail.com"
+                  className=" px-2 hover:bg-gray-700 border-2 rounded-lg py-2 my-5"
                   onClick={toggleMenu}
                 >
-                  <FaGithub className="mr-5"/>
-                  Github 
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#resume"
-                  className="block px-2 py-1 hover:bg-gray-700 rounded flex items-center justify-center py-5"
-                  onClick={toggleMenu}
-                >
-                  <FaFile className="mr-5"/>
-                  Resume
-                </a>
-              </li>
-              
-              <li>
-                <a
-                  href="#contact"
-                  className="block px-2 py-1 hover:bg-gray-700 rounded flex items-center justify-center py-5"
-                  onClick={toggleMenu}
-                >
-                  <RiContactsFill className="mr-5"/>
                   Contact me
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="block lg:hidden">
+          <div className="block lg:hidden absolute top-0 right-0">
             <button
               onClick={toggleMenu}
-              className="text-white focus:outline-none"
+              className="text-white focus:outline-none text-2xl p-5 font-bold"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d={"M6 18L18 6M6 6l12 12"}
-                ></path>
-              </svg>
+              <IoMdClose/>
             </button>
           </div>
         </div>
-
-
-
       ) : (
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-white text-lg font-bold gradient-text menu-item">Pallavi</div>
+        <div className="container mx-auto flex justify-between items-center px-2">
+          <Logo/>
           <div className="block lg:hidden">
             <button
               onClick={toggleMenu}
@@ -131,42 +85,17 @@ export function HeaderSection() {
             <ul className="lg:flex lg:space-x-4 mt-4 lg:mt-0 text-white">
               <li>
                 <a
-                  href="/"
-                  className="block mx-2 py-1 hover:border-b menu-item hover:text-[#0072ff] hover:border-[#0072ff]"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
                   href="#projects"
-                  className="block mx-2 py-1 hover:border-b menu-item  hover:text-[#0072ff] hover:border-[#0072ff]"
+                  className="block mx-2 py-1 menu-item  hover:text-[#5de0e6]"
                 >
                   Projects
                 </a>
               </li>
+
               <li>
                 <a
-                  href="https://github.com/PallaviBobde"
-                  target="_blank"
-                  className="block mx-2 py-1 hover:border-b  hover:text-[#0072ff] hover:border-[#0072ff]"
-                >
-                  Github 
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#resume"
-                  className="block mx-2 py-1 hover:border-b  menu-item  hover:text-[#0072ff] hover:border-[#0072ff]"
-                >
-                  Resume
-                </a>
-              </li>
-              
-              <li>
-                <a
-                  href="#contact"
-                  className="block mx-2 py-1 hover:border-b menu-item  hover:text-[#0072ff] hover:border-[#0072ff]"
+                 href="mailto:pallavibobde1@gmail.com"
+                  className="block mx-2 py-1 px-5 hover:border-b menu-item  text-[#5de0e6] border-2 rounded-lg border-[#5de0e6]"
                 >
                   Contact me
                 </a>
